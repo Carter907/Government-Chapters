@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 8 Review</title>
+    <link th:href="@{/css/Application.css?version=51}" rel="stylesheet"/>
+</head>
+<body>
+<div class="chapter8-heading">
+    <h1 style="text-align: center">WELCOME TO CHAPTER 8</h1>
+</div>
+<div class="ch8-1">
+    <div class="section">
+        <h3 class="intro"> Bill of Rights</h3>
+        <div class="para">
+            <p> The <a href="https://www.archives.gov/founding-docs/bill-of-rights-transcript">Bill of Rights</a>
+                is a set of protections that was used by the
+                Anti-Federalists during the ratification debates.
+                The Bill of Rights was a stipulation put in place in order to
+                secure more protections from the potential <em>Tyranny of the Majority</em>
+                they were so afraid of.
+            </p>
+        </div>
+    </div>
+
+    <div id="bor-img">
+        <img th:src="@{/imgs/bill-of-rights.jpg}"
+             width="750" height="580"
+             alt="image of the bill of rights"
+
+        />
+    </div>
+    <div id="bill-of-rights-table">
+        <div class="para-text-long">
+
+            Only TWO of the Required Supreme Court Cases involved Selective Incorporation directly.
+            <ol>
+                <li>McDonald v. Chicago</li>
+                <li>Gideon v. Wainwright</li>
+            </ol>
+
+
+            Only TWO of the Required Supreme Court Cases involved Selective Incorporation directly.
+        </div>
+
+        <div class="section">
+
+            <table>
+                <tr>
+                    <th class="first-element-header">Amendment</th>
+                    <th class="long-element-header">Right/Description</th>
+                    <th class="short-element-header">Right Incorporated</th>
+                    <th class="short-element-header">Case</th>
+
+                </tr>
+                <tr>
+                    <td class="small-td">1st Amendment</td>
+                    <td>Protection of Speech and Expression from the Federal Government.</td>
+                    <td>
+                        <ol>
+                            <li>Freedom to exercise one's religion</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Wisconsin v. Yoder</li>
+                        </ol>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="required-court-case-table">
+        <h3 class="required-case-heading">
+            Required Court Cases Overview
+        </h3>
+        <table class="section">
+            <tr>
+                <th id="case-header">Case</th>
+                <th id="amendment-header">Amendment/Concept</th>
+                <th id="description-header">Description</th>
+                <th id="outcome-header">Outcome</th>
+            </tr>
+            <tr>
+                <td class="small-td">Engel V. Vital (1962)</td>
+                <td>1st Amendment; Establishment Clause</td>
+                <td>Incorporated the 1st Amendment to the states by asking if public school prayer was constitutional.
+                </td>
+                <td>The state cannot organize prayer in public school, even if the prayer
+                    is non-denominational and students are given options for non-participation.
+                </td>
+            </tr>
+            <tr>
+                <td class="small-td">Wisconsin v. Yoder (1972)</td>
+                <td>1st Amendment; Free Exercise Clause</td>
+                <td>Yoder was an Amish person and, under the <strong>Free Exercise Clause</strong>, argued that the
+                    Wisconsin Compulsory
+                    Attendance Law was infringing on his rights.
+                </td>
+                <td>Incorporated the Free Exercise Clause to the states. The Supreme Court ruled that the free exercise
+                    clause of
+                    the First Amendment, as incorporated by the Fourteenth Amendment, prevented the state of Wisconsin
+                    from compelling the Amish to send their children to formal secondary school beyond the age of
+                    fourteen.
+                </td>
+            </tr>
+            <tr>
+                <td class="small-td">McDonald v. Chicago</td>
+                <td>2nd Amendment</td>
+                <td>Otis McDonald and others were banned from personally owning firearms for self-defense because of
+                    Chicago's firearms laws.
+                </td>
+                <td>Amendment now applies to state and local government through the doctrine of <strong>selective
+                    incorporation</strong>.
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="MCQ-mini-1">
+
+
+    <form class="quiz">
+        <div id="mini-1-question-1" class="question">
+            <strong><span th:text="${isCorrect_1}"></span><br/></strong>
+            <label>
+                What case involved the 2nd Amendment?
+                <input style="visibility: hidden;" name="question_1" value="What case involved the 2nd Amendment?"/>
+            </label>
+            <ol style="list-style-type: upper-alpha">
+                <li>
+                    <label>
+                        Wisconsin v. Yoder
+                        <input type="radio" name="answer_1" value="Wisconsin v. Yoder"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        McDonald v. Chicago
+                        <input type="radio" name="answer_1" value="McDonald v. Chicago"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Tinker v. Des Moines
+                        <input type="radio" name="answer_1" value="Tinker v. Des Moines"/>
+                    </label>
+                </li>
+            </ol>
+
+        </div>
+        <div id="mini-2-question-2" class="question">
+            <strong><span th:text="${isCorrect_2}"></span><br/></strong>
+            <label>
+                Which of the following best describes why the Supreme Court is so frequently asked to decide cases that involve civil liberties?
+                <input style="visibility: hidden;" name="question_2" value="Which of the following best describes why the Supreme Court is so frequently asked to decide cases that involve civil liberties?"/>
+            </label>
+            <ol style="list-style-type: upper-alpha;">
+                <li>
+                    <label>
+                        The need of the government to protect society is often in conflict with the rights of individuals.
+                        <input type="radio" name="answer_2" value="The need of the government to protect society is often in conflict with the rights of individuals."/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        The individual amendments within the Bill of Rights include enforcement provisions.
+                        <input type="radio" name="answer_2" value="The individual amendments within the Bill of Rights include enforcement provisions."/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Government regulations of civil liberties have become less frequent over time.
+                        <input type="radio" name="answer_2" value="Government regulations of civil liberties have become less frequent over time."/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        The Supreme Court is required to grant certiorari in all cases involving civil liberties.
+                        <input type="radio" name="answer_2" value="The Supreme Court is required to grant certiorari in all cases involving civil liberties."/>
+                    </label>
+                </li>
+            </ol>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</div>
+
+
+</body>
+</html>
